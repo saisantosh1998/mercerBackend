@@ -20,7 +20,7 @@
     "http-status": "^1.6.2",
     "joi": "^17.9.2",
     "joi-objectid": "^4.0.2",
-    "mongoose": "^7.1.0",
+    "mongoose": "^6.10.5",
     "socket.io": "^4.6.1"
   },
   "devDependencies": {
