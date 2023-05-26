@@ -23,7 +23,7 @@ const ioServer = server.listen(config.port || 3000, () => {
 const io = require("socket.io")(ioServer, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://mercer-frontend.netlify.app/",
     // credentials: true,
   },
 });
