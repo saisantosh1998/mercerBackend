@@ -57,4 +57,3 @@ io.on("connection", (socket) => {
   });
 });
 
-exports.api = firebase.https.onRequest(server);

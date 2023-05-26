@@ -1,4 +1,5 @@
-const admin = require("../config/firebase-config");
+const { jwtDecode } = require("jwt-decode");
+// const admin = require("../config/firebase-config");
 const httpStatus = require("http-status");
 
 // using the firebase config and validating token provided ias valid or not 
@@ -6,7 +7,8 @@ const httpStatus = require("http-status");
 const verifyUser = async (req, res, next) => {
   const token = req.headers.authorization.split(" ")[1];
   try {
-      const decodeToken = await admin.auth().verifyIdToken(token);
+      // const decodeToken = await admin.auth().verifyIdToken(token);
+      const decodeToken=jwtDecode(token);
       if (decodeToken) {
         req.user = {
           email: decodeToken.email,
