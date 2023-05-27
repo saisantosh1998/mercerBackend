@@ -43,8 +43,6 @@ This project is a real-time chat application that allows users to login using Go
 5. Open your web browser and visit http://localhost:8082 to access the chat application.
 ## Technologies Used
 
-•	ReactJs for the client-side user interface.
-
 •	Node.js and Express.js for the server-side logic.
 
 •	Firebase Authentication for Google Sign-In.
